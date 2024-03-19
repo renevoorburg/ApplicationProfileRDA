@@ -24,7 +24,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# Nog open: recensie verscheen in de Theaterkrant, tekst verscheen in de reeks Nieuwe Toneelbibliotheek, première vond plaats tijdens het festival Zomer van Antwerpen; niet alle medewerkers aan de voorstelling hebben een passend element in RDA; RDA Content Type nodig voor "performed drama" o.i.d.?
+# Nieuw: PRODUCTIE
+
+
+ex:wprod # productie zeemaal
+    a rdac:C10001 ;
+    rdfs:label "Werk - Theaterproductie Zeemaal, door Sien Vanmaele" ;
+    rdaw:P10004 "theater production" ; #  category of work ???? welke varianten dan nog meer
+    rdaw:P10365 rdaep:1004 ; # extension plan - successive determinate
+    rdaw:P10088 "Zeemaal"@nl ; # has title of work
+    rdaw:P10064 ex:a50 . # producer agent
+
+ex:eprod
+    a rdac:C10006 ;
+    rdfs:label "Expressie - Theaterproductie Zeemaal, door Sien Vanmaele" ;
+    rdae:P20331 "theater production" ; # has category of expression: "theater production"  - ??
+    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
+	rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
+	rdae:P20031 ex:a54 ; # has stage director agent: [toneelregisseur] Jo Roets
+	rdae:P20035 ex:a55 ; # has musical director agent: [muzikaal director] Jason Dousselaere
+	rdae:P20036 ex:a56 ; # has costume designer agent: [kostuumontwerper] Manuela Lauwers
+	rdae:P20277 ex:a57 ; # has lighting designer agent: [lichtontwerper] Thomas Stevens
+    rdae:P20324 "uitvoeringsmediumIRI nog toevoegen" ; # has medium of performance of choreographic [or non-musical dramatic] content
+	rdae:P20005 "Vlaamse Juryselectie 22/23"@nl ;
+	rdae:P20231 ex:wprod . # has work expressed
+
 
 
 # ITEMS
@@ -103,31 +127,7 @@ ex:e52 # Expressie no. 52
     rdae:P20074 ex:eprod ;
 	rdae:P20231 ex:w51 . # has work expressed
 
-
-# productie
-
-ex:wprod # productie zeemaal
-    a rdac:C10001 ;
-    rdfs:label "Werk - Theaterproductie Zeemaal, door Sien Vanmaele" ;
-    rdaw:P10004 "theater production" ; #  category of work ???? welke varianten dan nog meer
-    rdaw:P10365 rdaep:1004 ; # extension plan - successive determinate
-    rdaw:P10088 "Zeemaal"@nl ; # has title of work
-    rdaw:P10064 ex:a50 . # producer agent
-
-ex:eprod
-    a rdac:C10006 ;
-    rdfs:label "Expressie - Theaterproductie Zeemaal, door Sien Vanmaele" ;
-    rdae:P20331 "theater production" ; # has category of expression: "theater production"  - ??
-    rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
-	rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
-	rdae:P20031 ex:a54 ; # has stage director agent: [toneelregisseur] Jo Roets
-	rdae:P20035 ex:a55 ; # has musical director agent: [muzikaal director] Jason Dousselaere
-	rdae:P20036 ex:a56 ; # has costume designer agent: [kostuumontwerper] Manuela Lauwers
-	rdae:P20277 ex:a57 ; # has lighting designer agent: [lichtontwerper] Thomas Stevens
-    rdae:P20324 "uitvoeringsmediumIRI nog toevoegen" ; # has medium of performance of choreographic [or non-musical dramatic] content
-	rdae:P20005 "Vlaamse Juryselectie 22/23"@nl ;
-	rdae:P20231 ex:wprod . # has work expressed
-
+# WERK
 
 ex:w50 # Werk no. 50
 	a rdac:C10001 ;
