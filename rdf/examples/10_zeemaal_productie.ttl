@@ -40,14 +40,14 @@ ex:eprod
     rdfs:label "Expressie - Theaterproductie Zeemaal, door Sien Vanmaele" ;
     rdae:P20331 "theater production" ; # has category of expression: "theater production"  - ??
     rdae:P20006 <http://id.loc.gov/vocabulary/iso639-2/dut> ; # has language of expression: Dutch
-	rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
-	rdae:P20031 ex:a54 ; # has stage director agent: [toneelregisseur] Jo Roets
-	rdae:P20035 ex:a55 ; # has musical director agent: [muzikaal director] Jason Dousselaere
-	rdae:P20036 ex:a56 ; # has costume designer agent: [kostuumontwerper] Manuela Lauwers
-	rdae:P20277 ex:a57 ; # has lighting designer agent: [lichtontwerper] Thomas Stevens
+    rdae:P20012 ex:a50 ; # has actor agent: [acteur] Sien Vanmaele
+    rdae:P20031 ex:a54 ; # has stage director agent: [toneelregisseur] Jo Roets
+    rdae:P20035 ex:a55 ; # has musical director agent: [muzikaal director] Jason Dousselaere
+    rdae:P20036 ex:a56 ; # has costume designer agent: [kostuumontwerper] Manuela Lauwers
+    rdae:P20277 ex:a57 ; # has lighting designer agent: [lichtontwerper] Thomas Stevens
     rdae:P20324 "uitvoeringsmediumIRI nog toevoegen" ; # has medium of performance of choreographic [or non-musical dramatic] content
-	rdae:P20005 "Vlaamse Juryselectie 22/23"@nl ;
-	rdae:P20231 ex:wprod . # has work expressed
+    rdae:P20005 "Vlaamse Juryselectie 22/23"@nl ;
+    rdae:P20231 ex:wprod . # has work expressed
 
 
 
